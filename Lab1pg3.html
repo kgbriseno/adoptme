@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Wont show because nothing in head shows on page-->
+        <title>My Second Web Page</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+
+    <body>
+        <!--Container to wrap everything-->
+        <div id="container">
+            <header>
+                
+            
+
+                <div class="logo">
+                    <img src="images/logo.jpg" alt="Adopt Me Logo" width ="300">
+                    
+        
+                </div>
+            
+                <nav>
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="Lab1pg2.html">Pets For Adoption</a></li>
+                            <li class="active"><a href="Lab1pg3.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <h1>Contact Form</h1>
+                
+                <div id="kitty">
+                    <img src="images/kitty.jpg" alt = "Kitty in Bed" width="700">
+                </div>
+
+                <form action="/contact" method= "post">
+                    <!--Everything will be in fiedld set will be relative to personal info if another then add another fieldset-->
+                    <fieldset>
+                        <legend>Contact Form</legend>
+                        <div class="basics">
+                        <label>Enter your full name</label><br>
+                        <input type="text" name="name"><br>
+                        </div>
+
+                        <div class="radios">
+                            <label>Select your gender</label>  
+                            <input type="radio" name="gender" value="female" checked>Female 
+                            <input type="radio" name="gender" value="male">Male
+                        </div>
+
+                        <div id="selectmenu">
+                            <label>How should we contact you?</label><br>  
+                            <select id = "select">
+                                <option id = "choose">Choose..</option>
+                                <option id = "email">Email</option>
+                                <option id = "phone">Phone</option>
+
+                            </select>
+                            <!--<div id = "option1"></div>
+                            <div id = "option2"></div>-->
+                            <div id = "result"></div>
+                        </div>
+
+                        <div class="button">
+                        <br>Which pet are you inquiring on or what questions do you have for us?<br>
+                        <textarea rows="10" cols="50"></textarea><br>
+                        <input type="submit" value="Contact">
+                        </div>
+
+
+                    </fieldset>
+                </form>
+
+
+            </main>
+            <!--&copy; is Copyrgiht symbol-->
+            <footer>&copy; Copyright 2020</footer>  
+
+        </div>
+    
+        <script src = "form.js"> </script>
+
+    </body>
+</html>
